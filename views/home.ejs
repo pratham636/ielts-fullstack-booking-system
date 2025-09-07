@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Booking Website</title>
+    <link rel="stylesheet" href="./style/home.css">  
+</head>
+<body>    
+    <!-- <div class="left">
+        <img src="Pictures/logo.png" alt="">
+    </div> -->
+    <!-- <div class="mid">mid</div> --> 
+    <!-- <div class="right"><p>right</p></div> -->
+  
+    <nav id="navbar">
+        <div class="logo">  <a href="/">  <img src="./Pictures/logo.png" alt=""></a></div>
+        
+        <ul class="con">
+                
+                <li class="item"> <a href="/">Home</a> </li>
+                <li class="item"> <a href="/information">Information</a></li>
+                <li class="item"> <a href="/location">Location</a> </li>
+                <li class="item"> <a href="/contact">Contact</a></li>
+                <li class="item"> <a href="/detail">Test Detail</a></li>
+        </ul>
+        <div class="login">
+          <!-- <a href="/login"> <img src="./Pictures/login.png" alt=""></a></div> -->
+    <% if (user) { %>
+    <div class="log">
+    <a href="/logout" class="item" id="logout">Logout</a>
+    <h1 class="item" id="username"><%= user.username %></h1>
+    </div>
+  <% } else { %>
+    <a href="/login"> <img src="./Pictures/login.png" alt=""></a>
+  <% } %>
+  </div>
+    </nav>
+    <nav class="body_1">
+
+        <div>
+            <img class="img_body" src="./Pictures/Celebrating_Together_in_the_Park.png" alt="">
+        </div>
+        <div id="par">
+            <p class="head">
+                Register for IELTS exam
+            </p>
+            <p class="pbody">
+                    Most reliable English proficiency test. IELTS on Computer results in just 1 day. 140+ test locations near you.
+            </p>
+            <nav>  
+<% if (user) { %>
+<form id="form" action="/detail" method="POST">
+  <input type="hidden" name="user_id" value="<%= user.id %>" />
+  <select name="type" id="iform">
+    <option value="Academic">Academic</option>
+    <option value="General Training">General Training</option>
+  </select>
+  <select name="format" id="iform">
+    <option value="Computer-delivered">Computer-delivered</option>
+    <option value="Paper-based">Paper-based</option>
+  </select>
+  <select name="city" id="iform">
+    <option value="Delhi">Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+  </select>
+  <select name="date" id="iform">
+    <option value="10 Sept 2025">10 Sept 2025</option>
+    <option value="15 Sept 2025">15 Sept 2025</option>
+  </select>
+  <button type="submit" id="iform">Submit</button>
+</form>
+<% } else { %>
+  <p class="pbody">Please <a href="/login">log in</a> to book a test.</p>
+<% } %>
+        </div>
+    </nav>
+</body>
+</html>

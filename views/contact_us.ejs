@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Booking Website</title>
+    <link rel="stylesheet" href="./style/contact.css">  
+</head>
+<body>    
+    <!-- <div class="left">
+        <img src="Pictures/logo.png" alt="">
+    </div> -->
+    <!-- <div class="mid">mid</div> --> 
+    <!-- <div class="right"><p>right</p></div> -->
+  
+    <nav id="navbar">
+        <div class="logo">  <a href="/">  <img src="./Pictures/logo.png" alt=""></a></div>
+        <ul class="con">
+                
+                <li class="item"> <a href="/">Home</a> </li>
+                <li class="item"> <a href="/information">Information</a></li>
+                <li class="item"> <a href="/location">Location</a> </li>
+                <li class="item"> <a href="/contact">Contact</a></li>
+                <li class="item"> <a href="/detail">Test Detail</a></li>
+        </ul>
+        <div class="login">
+          <!-- <a href="/login"> <img src="./Pictures/login.png" alt=""></a></div> -->
+    <% if (user) { %>
+    <div class="log">
+    <a href="/logout" class="item" id="logout">Logout</a>
+    <h1 class="item" id="username"><%= user.username %></h1>
+    </div>
+      <% } else { %>
+    <a href="/login"> <img src="./Pictures/login.png" alt=""></a>
+  <% } %>
+  </div>
+    </nav>
+    <nav>
+        <div>
+            <p class="heading">&bull; Contact Us</p>
+            <p id="par">&#10146; We’re always happy to hear from you! Whether you have questions, feedback, or need support, you can reach us in the following ways:</p>
+        </div>
+        <nav>
+            <div>
+                <p id="hea2">&bull; Email</p>
+                <p id="body2">
+                   &#10146; Write to us at: support@example.com <br>
+                   &#10146; We aim to respond within 24–48 hours. <br>
+                   &#10146; For sensitive topics, please use security@example.com.
+                </p>
+            </div>
+            <div>
+                <p id="hea2">&bull; Phone</p>
+                <p id="body2">&#10146; Call us at: +91 98765 43210
+<br>&#10146; Available Monday – Friday, 9:00 AM to 6:00 PM (IST).
+<br>&#10146; Please remember: Our team will never ask for your passwords, bank details, or other confidential data over the phone.</p>
+            </div>
+            <div>
+                <p id="hea2">&bull; Postal Address</p>
+                <p id="body2">
+                   <b>&bull; Project Team </b> <br>
+&#10146; 123 Main Street <br>
+&#10146; New Delhi, India – 110001
+                </p>
+            </div>
+        </nav>
+    </nav>
+</body>
+</html>

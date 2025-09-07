@@ -1,0 +1,98 @@
+*{
+ background-color: rgb(247, 247, 248);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background:url('../Pictures/Celebrating_Together_in_the_Park.png'); */
+}
+
+.left{
+    border: 2px solid red;
+    position: absolute;
+    display: inline-block;
+    margin: 0px;
+    
+}
+.logo img{
+    height: 163px;
+    width: 200px;
+}
+#navbar{
+display: flex;
+/* border: 2px green solid; */
+align-items: center;
+justify-content: space-between;
+        border-bottom: #3d3d3d84 2px solid;
+/* width: 100%; */
+}
+.login img{
+    height: 95px;
+    width: 95px;
+    /* margin: 10px 10px 10px 360px; */
+    
+}
+
+.item{
+        align-items: center;
+        /* background-color: orange; */
+        margin: 2px;
+        width: 200px;
+        flex-flow: row wrap;
+         font-family: 'Arial', sans-serif;
+  color: darkviolet;
+    }
+ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+      /* color: #3d3d3d84; */
+}
+#logout{
+        text-decoration: none;
+        margin: 0px 20px;
+}
+#username{
+    margin: 2px;
+}
+#navbar ul li a:hover {
+    color: darkgoldenrod;
+}
+.img_body{
+    width: 669px;
+    height: 468px;
+    margin: 20px;
+    border-radius: 5% 0% 0% 5%;
+}
+.heading{
+    font-size: 50px;
+    margin: 40px 40px 5px 70px;
+             font-family: 'Arial', sans-serif;
+
+}
+#par{
+    font-size: 20px;
+    margin: 5px 40px 40px 70px;         
+    font-family: 'Arial', sans-serif;
+             border-bottom: #3d3d3d84 solid 2px;
+             padding: 0px 0px 20px 0px;
+}
+#hea2{
+    font-size: 40px;
+    margin: 40px 40px 5px 70px;
+             font-family: 'Arial', sans-serif;
+
+}
+#body2{
+    font-size: 20px;
+    margin: 5px 40px 40px 70px;
+         font-family: 'Arial', sans-serif;
+         border-bottom: #3d3d3d84 solid 2px;
+         padding: 0px 0px 20px 0px;
+
+}

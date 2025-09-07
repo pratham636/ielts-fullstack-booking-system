@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Booking Website</title>
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">  <a href="/">  <img src="./Pictures/logo.png" alt=""></a></div>
+        <ul class="con">
+                
+                <li class="item"> <a href="/">Home</a> </li>
+                <li class="item"> <a href="/information">Information</a></li>
+                <li class="item"> <a href="/location">Location</a> </li>
+                <li class="item"> <a href="/contact">Contact</a></li>
+                <li class="item"> <a href="/detail">Test Detail</a></li>
+        </ul>
+        <div class="login">
+          <!-- <a href="/login"> <img src="./Pictures/login.png" alt=""></a></div> -->
+    <% if (user) { %>
+    <div class="log">
+    <a href="/logout" class="item" id="logout">Logout</a>
+    <h1 class="item" id="username"><%= user.username %></h1>
+    </div>
+  <% } else { %>
+    <a href="/login"> <img src="./Pictures/login.png" alt=""></a>
+  <% } %>
+  </div>
+    </nav>
+    <nav class="f3">
+        <div class="logo2">
+              <img src="./Pictures/login.png" alt="">
+        </div>
+        <div class="form">
+            <form action="/login" method="POST">
+        <input id="f1" type="username" name="username" placeholder="Enter username" required><br>
+        <input id="f1" type="password" name="password" placeholder="Enter password" required><br>
+        <button class="submit"  type="submit">Login</button>
+        <button class="submit"  type="submit"><a href="/register">Register</a></button>
+      </form>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Booking Website</title>
+    <link rel="stylesheet" href="./style/information.css">  
+</head>
+<body>    
+    <!-- <div class="left">
+        <img src="Pictures/logo.png" alt="">
+    </div> -->
+    <!-- <div class="mid">mid</div> --> 
+    <!-- <div class="right"><p>right</p></div> -->
+  
+    <nav id="navbar">
+        <div class="logo">  <a href="/">  <img src="./Pictures/logo.png" alt=""></a></div>
+        <ul class="con">
+                
+                <li class="item"> <a href="/">Home</a> </li>
+                <li class="item"> <a href="/information">Information</a></li>
+                <li class="item"> <a href="/location">Location</a> </li>
+                <li class="item"> <a href="/contact">Contact</a></li>
+                <li class="item"> <a href="/detail">Test Detail</a></li>
+        </ul>
+        <div class="login">
+          <!-- <a href="/login"> <img src="./Pictures/login.png" alt=""></a></div> -->
+    <% if (user) { %>
+    <div class="log">
+    <a href="/logout" class="item" id="logout">Logout</a>
+    <h1 class="item" id="username"><%= user.username %></h1>
+    </div>
+  <% } else { %>
+    <a href="/login"> <img src="./Pictures/login.png" alt=""></a>
+  <% } %>
+  </div>
+    </nav>
+    <nav id="body">
+    <div>
+        <p class="title">&bull; IELTS Information</p>
+        <p id="text">&#10146; The International English Language Testing System (IELTS) is one of the world’s most popular English language proficiency tests. It is designed to assess the language skills of people who want to study, work, or migrate to countries where English is the main language of communication.</p>
+    </div>
+    <div>
+        <p id="title2">&bull; Why IELTS?</p>
+        <p id="text">&#10146; Accepted by over 12,000 organizations worldwide, including universities, employers, and governments. 
+<br>&#10146; Recognized in countries such as the UK, USA, Canada, Australia, and New Zealand. 
+<br>&#10146; Provides a fair and accurate measurement of your listening, reading, writing, and speaking skills.</p>
+    </div>
+    <div>
+        <p id="title2">&bull; Test Types</p>
+        <p id="text">&#10146; IELTS Academic – For students applying to higher education or professional registration. <br>
+
+&#10146; IELTS General Training – For work experience, training programs, or migration purposes.</p>
+    </div>
+    <div>
+        <p id="title2">&bull; Test Format</p>
+        <p id="text">&#10146; The IELTS exam is divided into four sections: <br>
+<ol start="1">
+<li>Listening (30 minutes) – 4 recordings, 40 questions. <br> </li>
+
+<li>Reading (60 minutes) – Academic or General, 40 questions. <br> </li>
+
+<li>Writing (60 minutes) – 2 tasks (essay + report/letter). <br> </li>
+
+<li>Speaking (11–14 minutes) – Face-to-face interview with an examiner.</li></ol></p>
+    </div>
+    <div>
+        <p id="title2">&bull; Scoring</p>
+        <p id="text">&#10146; Each section is scored on a band scale from 0 to 9. <br>
+
+&#10146; The overall band score is the average of all four sections. <br>
+
+&#10146; Different institutions and countries require different minimum band scores (e.g., 6.0–7.5 for universities).</p>
+    </div>
+    <div>
+        <p id="title2">&bull; Test Availability</p>
+        <p id="text">&#10146; IELTS tests are conducted multiple times each month in test centers around the world. <br>
+
+&#10146; You can choose between paper-based and computer-based formats.</p>
+    </div>
+    <div>
+        <p id="title2">&bull; Why Take IELTS?</p>
+        <p id="text">&#10146; Opens doors to global education opportunities. <br>
+
+&#10146; Helps with migration and work visa applications. <br>
+
+&#10146; Builds confidence in your English communication skills.</p>
+    </div>
+</nav>
+</body>
+</html>

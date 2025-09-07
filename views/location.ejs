@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Booking Website</title>
+    <link rel="stylesheet" href="./style/location.css">  
+</head>
+<body>    
+    <!-- <div class="left">
+        <img src="Pictures/logo.png" alt="">
+    </div> -->
+    <!-- <div class="mid">mid</div> --> 
+    <!-- <div class="right"><p>right</p></div> -->
+  
+    <nav id="navbar">
+        <div class="logo">  <a href="/">  <img src="./Pictures/logo.png" alt=""></a></div>
+        <ul class="con">
+                
+                <li class="item"> <a href="/">Home</a> </li>
+                <li class="item"> <a href="/information">Information</a></li>
+                <li class="item"> <a href="/location">Location</a> </li>
+                <li class="item"> <a href="/contact">Contact</a></li>
+                <li class="item"> <a href="/detail">Test Detail</a></li>
+        </ul>
+        <div class="login">
+          <!-- <a href="/login"> <img src="./Pictures/login.png" alt=""></a></div> -->
+    <% if (user) { %>
+    <div class="log">
+    <a href="/logout" class="item" id="logout">Logout</a>
+    <h1 class="item" id="username"><%= user.username %></h1>
+    </div>
+  <% } else { %>
+    <a href="/login"> <img src="./Pictures/login.png" alt=""></a>
+  <% } %>
+  </div>
+    </nav>
+    <nav>
+        <div>
+                <p class="title">
+                    &bull; Pratham-Institut New Delhi
+                </p>
+            <div class="titilebody">
+                <p class="body1" id="body2">
+                   &bull; <b> Address</b> <br>&#10146; 3, Kasturba Gandhi Marg <br>
+ New Delhi 110 001 <br>
+ India           </p>
+                <p class="body1" id="body2">
+                   &bull; <b> Contact</b> <br>
+                   &bull; <b>Reception </b><br>
+
+&#10146; info-delhi@goethe.de  <br>
+
+&bull; <b> Library : </b><br>
+
+&#10146; library-delhi@goethe.de <br>
+
+&bull; <b>Language Office</b> <br>
+
+&#10146; language-delhi@goethe.de
+                </p>
+                <p class="body1">
+                    &bull; <b>Opening Hours</b> <br>
+                    
+                  &#10146; Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                               &#10146; Tel:	011 2347 1100
+     
+                </p>
+            </div>
+            <div class="body">
+                <!-- <p class="body2">3, Kasturba Gandhi Marg <br>
+New Delhi 110 001 <br>
+India</p> -->
+                <!-- <p class="body2"><b>Reception </b><br>
+
+info-delhi@goethe.de  <br>
+
+<b> Library : </b><br>
+
+library-delhi@goethe.de <br>
+
+<b>Language Office</b> <br>
+
+language-delhi@goethe.de</p> -->
+                <!-- <p class="body2">Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                                Tel:	011 2347 1100 -->
+                <!-- </p> -->
+            </div>
+        </div>
+        
+        <div>
+                <p class="title">
+                   &bull; Pratham-Institut BANGALORE
+                </p>
+            <div class="titilebody">
+                <p class="body1" id="body2">
+                   &bull; <b> Address</b> <br>
+                  &#10146; 716, CMH Road<br>
+ Indiranagar 1st Stage <br>
+ Bangalore 560 038 <br>
+ India
+                </p>
+                <p class="body1" id="body2">
+                    &bull; <b>Contact</b> <br>
+                   &bull; <b>Reception </b><br>
+
+&#10146; info-banglore@goethe.de  <br>
+
+&bull; <b> Library : </b><br>
+
+&#10146; library-banglore@goethe.de <br>
+
+&bull; <b>Language Office</b> <br>
+
+&#10146; language-banglore@goethe.de</p>
+                </p>
+                <p class="body1">
+                   &bull; <b>Opening Hours</b>
+                    <br>&#10146; Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                               &#10146; Tel:	011 2347 2200
+                </p>
+            </div>
+            <div class="body">
+                <!-- <p class="body2">716, CMH Road<br>
+Indiranagar 1st Stage <br>
+Bangalore 560 038 <br>
+India</p> -->
+                <!-- <p class="body2"><b>Reception </b><br>
+
+info-banglore@goethe.de  <br>
+
+<b> Library : </b><br>
+
+library-banglore@goethe.de <br>
+
+<b>Language Office</b> <br>
+
+language-banglore@goethe.de</p> -->
+                <!-- <p class="body2">Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                                Tel:	011 2347 2200 -->
+                <!-- </p> -->
+            </div>
+        </div>
+        
+        <div>
+                <p class="title">
+                  &bull;  Pratham-Institut MUMBAI
+                </p>
+            <div class="titilebody">
+                <p class="body1" id="body2">
+                    &bull; <b>Address </b>
+                     <br>&#10146; located at Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)<br>
+&#10146; 159-161, Mahatma Gandhi Road, Fort <br>
+Mumbai 400 023 <br>
+India
+                </p>
+                <p class="body1" id="body2">
+                   &bull; <b> Contact</b> <br>
+                   &bull; <b>Reception </b><br>
+
+&#10146; info-mumbai@goethe.de  <br>
+
+&bull; <b> Library : </b><br>
+
+&#10146; library-mumbai@goethe.de <br>
+
+&bull; <b>Language Office</b> <br>
+
+&#10146; language-mumbai@goethe.de
+                </p>
+                <p class="body1">
+                   &bull; <b>Opening Hours</b> <br> &#10146; Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                               &#10146; Tel:	011 2347 5200
+                    
+                </p>
+            </div>
+            <div class="body">
+                <!-- <p class="body2">located at Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)<br>
+159-161, Mahatma Gandhi Road, Fort <br>
+Mumbai 400 023 <br>
+India</p> -->
+                <!-- <p class="body2"><b>Reception </b><br>
+
+info-mumbai@goethe.de  <br>
+
+<b> Library : </b><br>
+
+library-mumbai@goethe.de <br>
+
+<b>Language Office</b> <br>
+
+language-mumbai@goethe.de</p> -->
+                <!-- <p class="body2">Mon–Fri:	09:30-13:00, 14:00-18:00 <br>
+                                Tel:	011 2347 5200
+                </p> -->
+            </div>
+        </div>
+        
+    </nav>
+</body>
+</html>
