@@ -73,7 +73,7 @@ npm install express mysql2 ejs body-parser bcryptjs express-session
 ```
 **4. Configuration**
    Update the db connection in app.js with your MySQL credentials:
-   ``JavaScriptconst 
+   ```JavaScriptconst 
    db = 
    mysql.createConnection({
     host: "localhost",
@@ -81,8 +81,8 @@ npm install express mysql2 ejs body-parser bcryptjs express-session
     password: "YOUR_PASSWORD", // Change this
     database: "login"
 });
-``
-**6. Start Server**
+```
+**5. Start Server**
 ```Bash
 node app.js
 ```
