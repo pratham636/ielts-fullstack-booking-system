@@ -88,7 +88,19 @@ node app.js
 ```
 The application will be available at http://127.0.0.1:80/.
 ## 🛤️ API Routes
-MethodRouteDescriptionGET/Homepage with Booking FormGET/loginUser Login PageGET/registerUser Registration PagePOST/registerHandles Bcrypt hashing & DB insertionPOST/detailSubmits new test bookingGET/detailDisplays user-specific booking historyGET/logoutDestroys session and redirects to login
+| Method | Route | Description |
+| :--- | :--- | :--- |
+| **GET** | `/` | Homepage with Test Booking form (requires login) |
+| **GET** | `/information` | Information about IELTS exams |
+| **GET** | `/location` | Available test center locations |
+| **GET** | `/contact` | Contact support page |
+| **GET** | `/login` | User login portal |
+| **GET** | `/register` | New user registration page |
+| **POST** | `/register` | Validates data and hashes password using Bcrypt |
+| **POST** | `/login` | Authenticates user and starts session |
+| **POST** | `/detail` | Submits a new exam booking to the database |
+| **GET** | `/detail` | Fetches and displays all bookings for the logged-in user |
+| **GET** | `/logout` | Destroys the current session and redirects to login |
 # 🛠️ Tech Stack
 * **Runtime:** Node.js
 * **Framework:** Express.js
